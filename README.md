@@ -5,7 +5,7 @@ A machine learning-based web application that predicts diabetes risk based on he
 ==============================================
 
 ## 🚀 Live Demo
-👉 [https://diabetes-risk-predictorgit-vaibhav.streamlit.app/]
+👉 [https://diabetes-risk-predictor-git-vaibhav.streamlit.app/]
 
 ==============================================
 
