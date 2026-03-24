@@ -4,6 +4,9 @@ import pandas as pd
 import pickle
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
+import warnings
+warnings.filterwarnings("ignore", category= UserWarning)
+
 
 # load the trained model and scaler
 model = pickle.load(open("diabetes_model.pkl", "rb"))
@@ -64,7 +67,7 @@ with left:
 
     with col1:
         preg = st.number_input("Number of Pregnancies", min_value = 0, max_value = 20, value = 0)
-        glucose = st.number_input("Glucose level", min_value = 0, max_value = 300, value = 0)
+        glucose = st.number_input("Glucose level", min_value = 0, max_value = 200, value = 0)
         BP = st.number_input("Blood Pressure", min_value = 0, max_value = 200, value = 0)
         skin = st.number_input("Skin Thickness", min_value = 0, max_value = 100, value = 0)
 
