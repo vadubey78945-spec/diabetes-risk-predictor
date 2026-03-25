@@ -35,27 +35,61 @@ st.markdown("""
             padding: 20px;
             border-radius: 15px;
             backdrop-filter: blur(10px);
-            box-shadow 0px 4px 10px rgba(0,0,0,0.3);
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
             }
             
             h1, h2, h3{
             color: #00C6FF;
             }
-            <style>
+
+            /* GENERAL TEXT FIX */
+            label, .stNumberInput label, .stTextInput label {
+            font-weight: 600;
+            color: white !important;
+            }
+
+            /* PRIMARY BUTTON STYLE */
+            
+            .stButton button {
+            background: linear-gradient(90deg, #4F46E5,#4338CA) !important;
+            color: white !important;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-weight: 600;
+            border: none;
+            box-shadow: 0px 0px 15px rgba(79, 70, 229, 0.3);
+            transition: all 0.3s ease;
+            }
+
+            /* HOVER EFFECT */
+            .stButton button:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 25px rgba(67, 56, 202, 0.5);
+            transform: translateY(-5px);
+            }
+
+            /* SECONDARY BUTTON (Download) */
+            .stDownloadButton button {
+            background: linear-gradient(90deg, #00ff95, #00c853) !important;
+            color: black !important;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-weight: 600;
+            border: none;
+            }
+
+            /* HOVER */
+            .stDownloadButton button:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(0,255,150,0.5);
+            }
+            </style>
             """,unsafe_allow_html=True)
 
-
-st.markdown("##")
 
 # Title and Description
 st.title("Diabetes Risk Predictor")
 st.markdown("### Advanced Diabetes Risk Analysis")
-st.markdown("---")
-
-st.markdown("##")
-
-# Sidebar Input 
-st.sidebar.header("Patient Health Analyzer")
 
 left, right = st.columns([1, 2])
 
